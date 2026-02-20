@@ -1,10 +1,9 @@
 torch==2.8.0
 torchvision==0.23.0
-numpy==2.4.2
-pandas==3.0.1
-Pillow==12.1.1
-plotly==6.5.0
+numpy
+pandas
+Pillow
+plotly
 streamlit==1.52.1
-gdown==5.2.0
-opencv-python-headless==4.11.0.86
-
+gdown
+opencv-python-headless
