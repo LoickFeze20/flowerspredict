@@ -700,10 +700,10 @@ def main():
     # En-tête premium
     st.markdown("""
     <div class="premium-header animate-slide">
-        <h1>🎯 AttentionCNN Pro</h1>
+        <h1>🎯 Flowers Predict Pro</h1>
         <p>Classification intelligente avec mécanismes d'attention CBAM</p>
         <div class="model-badge">
-            <span>🤖 Modèle: sn_attention.pth • Architecture: CBAM • v1.0</span>
+            <span>🤖  Architecture: CBAM </span>
         </div>
     </div>
     """, unsafe_allow_html=True)
@@ -779,7 +779,7 @@ def main():
             # Bouton d'analyse
             st.markdown("<br>", unsafe_allow_html=True)
             
-            if st.button("🔍 ANALYSER AVEC ATTENTION", key="analyze", use_container_width=True):
+            if st.button("🔍 ANALYSER ", key="analyze", use_container_width=True):
                 with st.spinner("🔄 Calcul des cartes d'attention..."):
                     result = predict_with_attention(model, image, class_names)
                     
@@ -980,4 +980,5 @@ def main():
 # ==============================================
 
 if __name__ == "__main__":
+
     main()
